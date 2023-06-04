@@ -1,0 +1,107 @@
+{
+  "_id": 3,
+  "img_name": "base_img",
+  "tag": "latest",
+  "children": [
+    {
+      "_id": 2,
+      "img_name": "python_img",
+      "tag": "latest",
+      "children": [
+        {
+          "_id": 1,
+          "img_name": "pip_img",
+          "tag": "latest",
+          "children": [
+            {
+              "_id": 0,
+              "img_name": "pymongo_img",
+              "tag": "latest",
+              "children": [],
+              "parent": 1,
+              "sibling": null,
+              "local_path": "/Users/shahpoojandikeshkumar/Desktop/SI/docker_files/img6/Dockerfile",
+              "repo_path": null,
+              "components": [],
+              "lastsyncedtime": null,
+              "architecture": null,
+              "files": [
+                {
+                  "name": "requirements.txt",
+                  "local_path": "/Users/shahpoojandikeshkumar/Desktop/SI/docker_files/img6/requirements.txt",
+                  "repo_path": null
+                }
+              ]
+            },
+            {
+              "_id": 4,
+              "img_name": "numpy_img",
+              "tag": "latest",
+              "children": [],
+              "parent": 1,
+              "sibling": null,
+              "local_path": "/Users/shahpoojandikeshkumar/Desktop/SI/docker_files/img4/Dockerfile",
+              "repo_path": null,
+              "components": [],
+              "lastsyncedtime": null,
+              "architecture": null,
+              "files": []
+            },
+            {
+              "_id": 7,
+              "img_name": "matplotlib_img",
+              "tag": "latest",
+              "children": [],
+              "parent": 1,
+              "sibling": null,
+              "local_path": "/Users/shahpoojandikeshkumar/Desktop/SI/docker_files/img5/Dockerfile",
+              "repo_path": null,
+              "components": [],
+              "lastsyncedtime": null,
+              "architecture": null,
+              "files": []
+            }
+          ],
+          "parent": 2,
+          "sibling": null,
+          "local_path": "/Users/shahpoojandikeshkumar/Desktop/SI/docker_files/img3/Dockerfile",
+          "repo_path": null,
+          "components": [],
+          "lastsyncedtime": null,
+          "architecture": null,
+          "files": []
+        }
+      ],
+      "parent": 3,
+      "sibling": null,
+      "local_path": "/Users/shahpoojandikeshkumar/Desktop/SI/docker_files/img1/Dockerfile",
+      "repo_path": null,
+      "components": [],
+      "lastsyncedtime": null,
+      "architecture": null,
+      "files": []
+    },
+    {
+      "_id": 6,
+      "img_name": "gcc_img",
+      "tag": "latest",
+      "children": [],
+      "parent": 3,
+      "sibling": null,
+      "local_path": "/Users/shahpoojandikeshkumar/Desktop/SI/docker_files/img2/Dockerfile",
+      "repo_path": null,
+      "components": [],
+      "lastsyncedtime": null,
+      "architecture": null,
+      "files": []
+    }
+  ],
+  "parent": null,
+  "sibling": null,
+  "local_path": "/Users/shahpoojandikeshkumar/Desktop/SI/docker_files/base_img/Dockerfile",
+  "repo_path": null,
+  "components": [],
+  "lastsyncedtime": null,
+  "architecture": null,
+  "files": []
+}
