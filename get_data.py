@@ -1,7 +1,6 @@
 import pymongo
 import json
 
-
 root_id = 3
 
 class treenode:
@@ -17,7 +16,7 @@ class treenode:
     sibling = None
     local_path = None
     repo_path = None
-    components = []
+    components = None
     lastsyncedtime = None
     architecture = None
     files = []
@@ -47,6 +46,14 @@ if __name__ == "__main__":
         file.write(json_data)
 
     data = json.loads(json_data)
+    # print(json_data)
+    data = sorted(data, key=lambda x: x['img_name'])
+    print(data)
+
+    for img in data:
+        if img["sibling"]:
+            node = records.find_one({"_id": img["sibling"]})
+            img["sibling"] = str(node["img_name"] + ':' + node["tag"])
     hierarchy = create_hierarchy(data)
     # print(hierarchy)
     json_data = json.dumps(hierarchy[0],indent=2)
